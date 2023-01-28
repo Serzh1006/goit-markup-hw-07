@@ -186,8 +186,9 @@ img {
   animation-duration: 500ms;
   animation-timing-function: linear; */
 
-  margin-bottom: 72px;
+  display: inline-block;
   width: 319px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
