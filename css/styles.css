@@ -35,7 +35,6 @@ p {
 }
 
 .container {
-  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -140,7 +139,6 @@ img {
 /* hero */
 
 .hero {
-  width: 480px;
   padding: 112px 0;
   height: 432px;
   text-align: center;
@@ -189,7 +187,7 @@ img {
   animation-timing-function: linear; */
 
   margin-bottom: 72px;
-  min-width: 318px;
+  width: 319px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -282,7 +280,6 @@ img {
 } */
 
 .team {
-  width: 479px;
   margin-top: 96px;
   padding-top: 120px;
   padding-bottom: 120px;
