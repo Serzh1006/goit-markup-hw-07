@@ -3,11 +3,100 @@
     width: 768px;
   }
 
+  .hero {
+    max-width: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg-tab.jpg");
+    background-color: var(--secondary-color);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/dark-bg-tab-@2x.jpg");
+      background-color: var(--secondary-color);
+    }
+  }
+
   .hero-title {
     display: inline-block;
     margin-bottom: 40px;
     width: 566px;
-    font-size: 57px;
+    font-size: 56px;
     line-height: 1.07;
+
+    animation-name: titleanim;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
+
+  @keyframes titleanim {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .advan-list {
+    display: flex;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .advan-title {
+    text-align: left;
+  }
+
+  .advan-text {
+    width: 356px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-item {
+    margin: 0;
+    width: 264px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: 168px;
+  }
+
+  .customers-link {
+    padding: 16px 32px;
+  }
+
+  .icon-customers {
+    display: block;
+    width: 104px;
   }
 }
