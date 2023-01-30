@@ -52,7 +52,6 @@ img {
 }
 
 .header-container {
-  /* display: flex; */
 }
 /*---------- Logo ----------*/
 
@@ -76,15 +75,9 @@ img {
 /*---------- Navigation ----------*/
 
 .navigation {
-  /* display: flex;
-  align-items: center; */
 }
 
 .nav-list {
-  /* display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-left: 77px; */
 }
 
 /*---------- Nav-link ----------*/
@@ -111,17 +104,6 @@ img {
   color: var(--accent-color);
 }
 
-.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--button-color);
-  border-radius: 2px;
-}
-
 .active-color {
   color: var(--button-color);
 }
@@ -129,9 +111,6 @@ img {
 /*---------- contacts ----------*/
 
 .contacts-list {
-  /* display: flex;
-  gap: 40px;
-  margin-left: auto; */
 }
 .contacts-link {
   display: block;
