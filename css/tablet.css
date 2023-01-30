@@ -1,13 +1,15 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+
+  .nav-logo,
+  .f-logo {
+    line-height: 1.33;
   }
 
   .hero {
     max-width: 1199px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -32,7 +34,6 @@
   }
 
   .hero-title {
-    display: inline-block;
     margin-bottom: 40px;
     width: 566px;
     font-size: 56px;
@@ -53,6 +54,10 @@
     }
   }
 
+  .advan-title {
+    text-align: left;
+  }
+
   .advan-list {
     display: flex;
     row-gap: 72px;
@@ -61,16 +66,14 @@
     flex-direction: row;
   }
 
-  .advan-title {
-    text-align: left;
-  }
-
   .advan-text {
     width: 356px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .team-list {
-    display: flex;
     flex-direction: row;
     column-gap: 24px;
     row-gap: 64px;

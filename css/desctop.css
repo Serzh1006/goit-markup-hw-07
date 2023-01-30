@@ -1,18 +1,97 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
+  }
+
+  .hero {
+    max-width: 1400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+    background-color: var(--secondary-color);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-pc-@2x.jpg");
+      background-color: var(--secondary-color);
+    }
   }
 
   .hero-title {
-    max-width: 496px;
     margin-bottom: 48px;
-    margin-left: auto;
-    margin-right: auto;
+    animation-name: titleanim;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
 
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: var(--header-color);
+  @keyframes titleanim {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /*---------- Фоновые иконки секции advantages ----------*/
+  .advan-item::before {
+    display: block;
+    content: "";
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: var(--section-color);
+  }
+  .icon-antenna::before {
+    background-image: url("../images/antenna.svg");
+  }
+
+  .icon-clock::before {
+    background-image: url("../images/clock.svg");
+  }
+
+  .icon-diagram::before {
+    background-image: url("../images/diagram.svg");
+  }
+
+  .icon-astronaut::before {
+    background-image: url("../images/astronaut.svg");
+  }
+
+  .advan-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .advan-text {
+    width: 264px;
+    font-weight: 400;
+  }
+  .projects {
+    display: block;
+  }
+
+  .team {
+    margin-top: 120px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 }
