@@ -5,4 +5,8 @@
   .hero {
     max-width: 767px;
   }
+
+  .footer {
+    max-width: 767px;
+  }
 }
