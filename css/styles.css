@@ -51,8 +51,92 @@ img {
   border-bottom: 1px solid var(--text-footer);
 }
 
-.header-container {
+.mob-menu {
+  position: fixed;
+  background-color: var(--white-color);
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
 }
+
+.mob-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob-top {
+  margin-bottom: 284px;
+}
+
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.mob-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.mob-socials {
+  display: flex;
+  gap: 56px;
+}
+
+.mob-socials-item {
+  width: 40px;
+  height: 40px;
+}
+
+.socials-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.socials-icon {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.menu-button {
+  position: absolute;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+}
+
 /*---------- Logo ----------*/
 
 .logo {
@@ -74,10 +158,8 @@ img {
 
 /*---------- Navigation ----------*/
 
-.navigation {
-}
-
 .nav-list {
+  display: none;
 }
 
 /*---------- Nav-link ----------*/
@@ -111,6 +193,7 @@ img {
 /*---------- contacts ----------*/
 
 .contacts-list {
+  display: none;
 }
 .contacts-link {
   display: block;

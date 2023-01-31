@@ -2,6 +2,10 @@
   .container {
     max-width: 428px;
   }
+
+  .mob-container {
+    max-width: 428px;
+  }
   .hero {
     max-width: 767px;
   }
