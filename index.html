@@ -58,9 +58,9 @@
         </ul>
       </div>
 
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
         <div class="mob-container">
-          <button class="menu-button" type="button" data-modal-close>
+          <button class="menu-button" type="button" data-menu-close>
             <svg width="8px" height="8px">
               <use href="./images/icons.svg#icon-button-close"></use>
             </svg>
@@ -80,15 +80,15 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="mob-bottom">
             <ul class="mob-contacts-list list">
               <li class="mob-contacts-item">
-                <a class="mob-contacts-link" href="tel:+11(000)1111111"
+                <a class="mob-tel-link" href="tel:+11(000)1111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="mob-contacts-item">
-                <a class="mob-contacts-link" href="mailto:info@devstudio.com"
+                <a class="mob-mail-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -127,7 +127,7 @@
           </div>
         </div>
       </div>
-      <button class="menu-hamburger" type="button" data-modal-close>
+      <button class="menu-hamburger" type="button" data-menu-open>
         <svg width="32px" height="32px">
           <use href="./images/icons.svg#icon-menu-hamburger"></use>
         </svg>
@@ -604,5 +604,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -48,6 +48,9 @@ img {
 /*---------------- HEADER ----------------*/
 
 .header {
+  position: relative;
+  width: 100vw;
+  height: 70px;
   border-bottom: 1px solid var(--text-footer);
 }
 
@@ -63,7 +66,7 @@ img {
 .mob-container {
   position: relative;
   margin: 0 auto;
-  padding: 48px;
+  padding: 80px 30px 40px 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -73,6 +76,10 @@ img {
 
 .mob-top {
   margin-bottom: 284px;
+}
+
+.mob-bottom {
+  min-width: 337px;
 }
 
 .mob-list {
@@ -94,14 +101,29 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 48px;
 }
 
-.mob-contacts-link {
+.mob-mail-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-color);
+}
+
+.mob-mail-link:focus,
+.mob-mail-link:hover {
+  color: var(--button-color);
+}
+
+.mob-tel-link {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .mob-socials {
@@ -115,26 +137,51 @@ img {
 }
 
 .socials-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-}
-
-.socials-icon {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 
+.socials-link:focus {
+  background-color: var(--button-color);
+}
+
 .menu-button {
   position: absolute;
+  display: block;
   padding: 0;
   top: 24px;
   right: 24px;
-  display: block;
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  background-color: var(--text-footer);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--button-color);
+  fill: var(--section-color);
+}
+
+.menu-hamburger {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   border: none;
+  stroke: var(--secondary-color);
+  background-color: transparent;
+}
+
+.menu-hamburger:hover,
+.menu-hamburger:focus {
+  stroke: var(--button-color);
 }
 
 /*---------- Logo ----------*/
@@ -154,6 +201,14 @@ img {
   text-transform: uppercase;
 
   color: var(--secondary-color);
+}
+
+.nav-logo {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  display: block;
 }
 
 /*---------- Navigation ----------*/
