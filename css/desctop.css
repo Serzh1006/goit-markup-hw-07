@@ -109,4 +109,26 @@
   .footer {
     max-width: 1440px;
   }
+
+  .footer-container {
+    display: flex;
+  }
+
+  .primary-box {
+    margin-left: 0;
+    margin-right: 120px;
+  }
+
+  .sub-title {
+    margin-left: 80px;
+  }
+
+  .sub-group {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  .post-text {
+    width: 264px;
+  }
 }

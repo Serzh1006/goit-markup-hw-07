@@ -117,4 +117,46 @@
   .footer {
     max-width: 1199px;
   }
+
+  .first-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 72px;
+  }
+
+  .f-logo {
+    text-align: left;
+  }
+
+  .media-title {
+    text-align: left;
+  }
+
+  .primary-box {
+    margin: 0;
+    margin-right: 24px;
+    margin-left: 108px;
+  }
+
+  .media {
+    margin: 0;
+  }
+
+  .sub-group {
+    display: flex;
+    justify-content: center;
+    max-width: 453px;
+    margin: 0 0 0 108px;
+  }
+
+  .sub-title {
+    text-align: left;
+    margin-left: 108px;
+    margin-bottom: 16px;
+  }
+
+  .sub-btn {
+    margin: 0;
+    margin-left: 24px;
+  }
 }
