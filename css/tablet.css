@@ -205,4 +205,11 @@
     margin: 0;
     margin-left: 24px;
   }
+
+  .modal {
+    width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
 }
