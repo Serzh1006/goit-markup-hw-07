@@ -3,9 +3,50 @@
     max-width: 768px;
   }
 
-  .nav-logo,
-  .f-logo {
+  .mob-menu {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .header {
+    position: static;
+    height: auto;
+  }
+  .header-container {
+    display: flex;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-left: 123px;
+    gap: 40px;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 118px;
+    margin-top: 24px;
+  }
+
+  .contacts-link {
+    padding: 0;
+    font-size: 12px;
     line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-link {
+    position: relative;
   }
 
   .active::after {
@@ -17,6 +58,11 @@
     height: 4px;
     background-color: var(--button-color);
     border-radius: 2px;
+  }
+
+  .nav-logo,
+  .f-logo {
+    line-height: 1.33;
   }
 
   .hero {

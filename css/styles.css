@@ -203,12 +203,14 @@ img {
   color: var(--secondary-color);
 }
 
-.nav-logo {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  display: block;
+@media screen and (max-width: 767px) {
+  .nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    display: block;
+  }
 }
 
 /*---------- Navigation ----------*/
