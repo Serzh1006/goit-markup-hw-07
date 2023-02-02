@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desctop.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- Navigation  -->
@@ -188,17 +188,28 @@
           <h2 class="projects-title">What are we doing</h2>
           <ul class="projects-list list">
             <li class="projects-item">
-              <img src="./images/pc.jpg" alt="Monitor" width="360" />
+              <img
+                srcset="./images/pc.jpg 1x, ./images/laptop@2x.jpg 2x"
+                src="./images/pc.jpg"
+                alt="Monitor"
+                width="360"
+              />
             </li>
             <li class="projects-item">
               <img
+                srcset="./images/application.jpg 1x, ./images/mobile@2x.jpg 2x"
                 src="./images/application.jpg"
                 alt="Mobile Application"
                 width="360"
               />
             </li>
             <li class="projects-item">
-              <img src="./images/phone.jpg" alt="phone" width="360" />
+              <img
+                srcset="./images/phone.jpg 1x, ./images/application@2x.jpg 2x"
+                src="./images/phone.jpg"
+                alt="phone"
+                width="360"
+              />
             </li>
           </ul>
         </div>
