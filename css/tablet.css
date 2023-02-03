@@ -130,6 +130,10 @@
     letter-spacing: 0.02em;
   }
 
+  .team {
+    padding-bottom: 104px;
+  }
+
   .team-list {
     flex-direction: row;
     column-gap: 24px;

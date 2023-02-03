@@ -276,7 +276,6 @@ img {
 .hero {
   max-width: 479px;
   padding: 112px 0;
-  height: 432px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -347,6 +346,7 @@ img {
 
 .advantages {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .advan-list {
@@ -399,9 +399,8 @@ img {
 /*---------- Section Team ----------*/
 
 .team {
-  margin-top: 96px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 128px;
 
   background-color: var(--section-color);
 }
@@ -486,7 +485,7 @@ img {
 /*---------- Section Customers ----------*/
 
 .customers {
-  padding: 130px 0 120px 0;
+  padding: 96px 0;
 }
 
 .customers-title {
@@ -536,8 +535,8 @@ img {
 
 .footer {
   max-width: 479px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
   background-color: var(--secondary-color);
 }
@@ -545,6 +544,10 @@ img {
 .primary-box {
   margin: 0 auto;
   width: 268px;
+  margin-bottom: 72px;
+}
+
+.first-box {
   margin-bottom: 72px;
 }
 
@@ -564,7 +567,6 @@ img {
 
 .media {
   margin: 0 auto;
-  margin-bottom: 72px;
   width: 208px;
 }
 
@@ -590,10 +592,13 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: background-color;
   transition-duration: 250ms;
