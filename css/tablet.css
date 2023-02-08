@@ -66,13 +66,14 @@
   }
 
   .hero {
-    max-width: 1199px;
+    max-width: 1440px;
+    padding: 188px 0;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/dark-bg-tab.jpg");
+      url("../images/people-office.jpg");
     background-color: var(--secondary-color);
   }
 
@@ -85,11 +86,10 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/dark-bg-tab-@2x.jpg");
+        url("../images/people-office-pc-@2x.jpg");
       background-color: var(--secondary-color);
     }
   }
-
   .hero-title {
     margin-bottom: 40px;
     width: 566px;
