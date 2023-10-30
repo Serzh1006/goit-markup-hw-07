@@ -125,6 +125,12 @@
     flex-wrap: nowrap;
     gap: 24px;
   }
+  .works-list {
+    row-gap: 48px;
+  }
+  .works-item {
+    width: 360px;
+  }
 
   .customers {
     padding: 120px 0;

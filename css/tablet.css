@@ -217,12 +217,22 @@
     padding-bottom: 24px;
   }
 
+  .filter-list {
+    gap: 24px;
+    justify-content: center;
+  }
+
   .works {
     padding-top: 64px;
     padding-bottom: 96px;
   }
 
   .works-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
     margin-top: 64px;
   }
 
